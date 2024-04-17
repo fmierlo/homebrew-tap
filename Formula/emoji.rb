@@ -5,20 +5,20 @@
 class Emoji < Formula
   desc ""
   homepage ""
-  version "0.0.0"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fmierlo/emoji/releases/download/v0.0.0/emoji_0.0.0_darwin_amd64.tar.gz"
-      sha256 "cd1b8492d9e6184deb6713d5b35f02f1816845ebab4abd09ceeb8dee1e879c04"
+      url "https://github.com/fmierlo/emoji/releases/download/v0.0.1/emoji_0.0.1_darwin_amd64.tar.gz"
+      sha256 "2fca99488be914df7ace9966011d4bf976b456bc6273b7a39eda82ea38c77393"
 
       def install
         bin.install "e"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fmierlo/emoji/releases/download/v0.0.0/emoji_0.0.0_darwin_arm64.tar.gz"
-      sha256 "cd1b8492d9e6184deb6713d5b35f02f1816845ebab4abd09ceeb8dee1e879c04"
+      url "https://github.com/fmierlo/emoji/releases/download/v0.0.1/emoji_0.0.1_darwin_arm64.tar.gz"
+      sha256 "2fca99488be914df7ace9966011d4bf976b456bc6273b7a39eda82ea38c77393"
 
       def install
         bin.install "e"
@@ -28,24 +28,24 @@ class Emoji < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/fmierlo/emoji/releases/download/v0.0.0/emoji_0.0.0_linux_amd64.tar.gz"
-      sha256 "cd1b8492d9e6184deb6713d5b35f02f1816845ebab4abd09ceeb8dee1e879c04"
+      url "https://github.com/fmierlo/emoji/releases/download/v0.0.1/emoji_0.0.1_linux_amd64.tar.gz"
+      sha256 "2fca99488be914df7ace9966011d4bf976b456bc6273b7a39eda82ea38c77393"
 
       def install
         bin.install "e"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/fmierlo/emoji/releases/download/v0.0.0/emoji_0.0.0_linux_armv7.tar.gz"
-      sha256 "cd1b8492d9e6184deb6713d5b35f02f1816845ebab4abd09ceeb8dee1e879c04"
+      url "https://github.com/fmierlo/emoji/releases/download/v0.0.1/emoji_0.0.1_linux_armv7.tar.gz"
+      sha256 "2fca99488be914df7ace9966011d4bf976b456bc6273b7a39eda82ea38c77393"
 
       def install
         bin.install "e"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fmierlo/emoji/releases/download/v0.0.0/emoji_0.0.0_linux_arm64.tar.gz"
-      sha256 "cd1b8492d9e6184deb6713d5b35f02f1816845ebab4abd09ceeb8dee1e879c04"
+      url "https://github.com/fmierlo/emoji/releases/download/v0.0.1/emoji_0.0.1_linux_arm64.tar.gz"
+      sha256 "2fca99488be914df7ace9966011d4bf976b456bc6273b7a39eda82ea38c77393"
 
       def install
         bin.install "e"
